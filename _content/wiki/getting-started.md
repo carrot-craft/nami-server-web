@@ -1,6 +1,7 @@
 ---
 title: "始め方 (Getting Started)"
 description: "なみサーバーでの始め方"
+order: 1
 ---
 
 # なみサーバーの始め方

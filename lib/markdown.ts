@@ -2,8 +2,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
-import html from "remark-html";
 import remarkGfm from "remark-gfm";
+import remarkRehype from "remark-rehype";
+import rehypeSlug from "rehype-slug";
+import rehypeStringify from "rehype-stringify";
 
 const contentDirectory = path.join(process.cwd(), "_content");
 
@@ -24,7 +26,9 @@ export async function getMarkdownContent(subDir: string, fileName: string): Prom
 
     const processedContent = await remark()
         .use(remarkGfm)
-        .use(html)
+        .use(remarkRehype)
+        .use(rehypeSlug)
+        .use(rehypeStringify)
         .process(matterResult.content);
     const contentHtml = processedContent.toString();
 
