@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, X, Loader2, FileText, Book, Newspaper } from "lucide-react";
+import { Search, X, Loader2, FileText, Book, Newspaper, Globe } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -32,7 +32,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     useEffect(() => {
         if (isOpen && allContent.length === 0) {
             setIsLoading(true);
-            fetch("/api/search")
+            // Fetch the static JSON file
+            fetch("/search.json")
                 .then((res) => res.json())
                 .then((data) => {
                     setAllContent(data);
@@ -69,9 +70,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             return (
                 item.title.toLowerCase().includes(searchTerm) ||
                 item.description.toLowerCase().includes(searchTerm) ||
-                item.content.toLowerCase().includes(searchTerm)
+                (item.content && item.content.toLowerCase().includes(searchTerm))
             );
-        }).slice(0, 5); // Limit to 5 results for now
+        }).slice(0, 5); // Limit to 5 results
 
         setResults(filtered);
     }, [query, allContent]);
@@ -89,7 +90,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     }, [onClose]);
 
     const handleSelect = (path: string) => {
-        router.push(path);
+        if (path.startsWith("http")) {
+            window.open(path, "_blank");
+        } else {
+            router.push(path);
+        }
         onClose();
     };
 
@@ -98,6 +103,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             case "wiki": return <Book className="h-4 w-4" />;
             case "news": return <Newspaper className="h-4 w-4" />;
             case "rule": return <FileText className="h-4 w-4" />;
+            case "page": return <Globe className="h-4 w-4" />;
             default: return <FileText className="h-4 w-4" />;
         }
     };
@@ -107,6 +113,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             case "wiki": return "Wiki";
             case "news": return "News";
             case "rule": return "Rule";
+            case "page": return "Page";
             default: return category;
         }
     };
@@ -139,7 +146,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                                     ref={inputRef}
                                     type="text"
                                     placeholder="検索..."
-                                    className="flex-1 bg-transparent text-lg outline-none placeholder:text-muted-foreground"
+                                    className="flex-1 bg-transparent text-lg outline-none placeholder:text-muted-foreground text-foreground"
                                     value={query}
                                     onChange={(e) => setQuery(e.target.value)}
                                 />
