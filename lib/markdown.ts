@@ -11,7 +11,7 @@ const contentDirectory = path.join(process.cwd(), "_content");
 
 export interface MarkdownData {
     slug: string;
-    contentHtml: string;
+    contentHtml?: string;
     title?: string;
     description?: string;
     tags?: string[];

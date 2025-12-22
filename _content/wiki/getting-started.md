@@ -1,7 +1,7 @@
 ---
 title: "始め方 (Getting Started)"
 description: "サーバーへの接続方法と最初の歩き方"
-order: 0
+order: 1
 tags: ["サバイバル鯖", "経済鯖", "ミニゲーム"]
 ---
 

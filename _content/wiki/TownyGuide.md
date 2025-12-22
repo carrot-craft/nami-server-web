@@ -1,7 +1,7 @@
 ---
 title: "Towny 使い方ガイド - 土地保護と町の運営"
 description: "Townyプラグインを使った町作りと経済システムのガイドです"
-order: 1
+order: 2
 tags: ["サバイバル鯖", "経済鯖"]
 ---
 
