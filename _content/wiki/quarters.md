@@ -2,6 +2,7 @@
 title: "Quarters 使い方ガイド - 3D区画システム"
 description: "アパートや複雑な建物を区画として管理できる3D区画システムの使い方です。"
 order: 4
+tags: ["サバイバル鯖", "経済鯖"]
 ---
 
 # 🏘️ Quarters 使い方ガイド

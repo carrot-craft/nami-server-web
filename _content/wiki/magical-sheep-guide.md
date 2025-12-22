@@ -2,6 +2,7 @@
 title: "MagicalSheep 使い方ガイド - 羊を使ったPVPゲーム"
 description: "羊を武器にして戦うPVPゲームの基本ルールと操作方法を解説します。"
 order: 5
+tags: ["ミニゲーム"]
 ---
 
 # MagicalSheep

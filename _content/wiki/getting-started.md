@@ -1,7 +1,8 @@
 ---
 title: "始め方 (Getting Started)"
-description: "なみサーバーでの始め方"
-order: 1
+description: "サーバーへの接続方法と最初の歩き方"
+order: 0
+tags: ["サバイバル鯖", "経済鯖", "ミニゲーム"]
 ---
 
 # なみサーバーの始め方

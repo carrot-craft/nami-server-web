@@ -40,6 +40,18 @@ export default function WikiPage() {
                                     {article.description}
                                 </p>
                             )}
+                            {article.tags && article.tags.length > 0 && (
+                                <div className="mt-4 flex flex-wrap gap-2">
+                                    {article.tags.map((tag: string) => (
+                                        <span
+                                            key={tag}
+                                            className="inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground"
+                                        >
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            )}
                         </Link>
                     ))}
                 </div>

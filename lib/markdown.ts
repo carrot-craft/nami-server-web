@@ -14,6 +14,7 @@ export interface MarkdownData {
     contentHtml: string;
     title?: string;
     description?: string;
+    tags?: string[];
     [key: string]: any;
 }
 
