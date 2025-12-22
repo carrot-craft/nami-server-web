@@ -49,7 +49,7 @@ export default async function NewsArticlePage({ params }: any) {
 
                         <div
                             className="prose prose-invert max-w-none prose-headings:font-bold prose-headings:text-foreground prose-a:text-primary hover:prose-a:underline prose-img:rounded-xl"
-                            dangerouslySetInnerHTML={{ __html: data.contentHtml }}
+                            dangerouslySetInnerHTML={{ __html: data.contentHtml || "" }}
                         />
                     </div>
                 </article>

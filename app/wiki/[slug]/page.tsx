@@ -52,7 +52,7 @@ export default async function WikiArticlePage({ params }: any) {
 
                     <div
                         className="prose prose-invert max-w-none prose-headings:scroll-mt-24 prose-headings:font-bold prose-headings:text-foreground prose-a:text-primary hover:prose-a:underline prose-code:rounded prose-code:bg-white/10 prose-code:px-1 prose-pre:bg-black/50"
-                        dangerouslySetInnerHTML={{ __html: data.contentHtml }}
+                        dangerouslySetInnerHTML={{ __html: data.contentHtml || "" }}
                     />
                 </article>
             </div>
