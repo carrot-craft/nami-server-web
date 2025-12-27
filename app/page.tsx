@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div className="mt-8 relative z-10">
               <a
-                href="http://nami-kokka-map.mcsv.win:3347/"
+                href="http://nami-kokka-map.mcsv.win:3377/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-lg border border-border bg-secondary px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary/80 hover:text-primary"

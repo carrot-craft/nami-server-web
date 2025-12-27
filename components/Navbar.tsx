@@ -13,7 +13,7 @@ const navItems = [
     { name: "お知らせ", href: "/news" },
     { name: "ルール", href: "/rule" },
     { name: "Wiki", href: "/wiki" },
-    { name: "マップ", href: "http://nami-kokka-map.mcsv.win:3347/", external: true },
+    { name: "マップ", href: "http://nami-kokka-map.mcsv.win:3377/", external: true },
     { name: "ステータス", href: "/status" },
     { name: "Discord", href: "https://discord.com/invite/cd33Z4ts3U", external: true },
 ];
