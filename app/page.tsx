@@ -17,7 +17,7 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-foreground">なみサーバーとは？</h2>
         <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
           なみサーバーは2025年8月に公開されたクロスプレイ対応サーバーです。<br />
-          今まで、約1500名の方に参加していただき、最高同時接続数は51人を記録しました。<br />
+          今まで、約1700名の方に参加していただき、最高同時接続数は76人を記録しました。<br />
           <span className="text-sm opacity-70">※2025年12月時点での記録です。</span>
         </p>
 
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             <h3 className="relative mb-6 text-2xl font-bold text-foreground flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-primary" />
-              ミニゲーム（ロビー）
+              ミニゲーム
             </h3>
             <div className="relative space-y-6 text-muted-foreground">
               <div>
@@ -61,8 +61,8 @@ export default function Home() {
                 <p className="mt-1">1対1で戦うガチの決闘モード。装備はゲーム開始時に渡され、腕と読み合いだけで勝負が決まります。「タイマンで勝負したい！」という時にぴったり。</p>
               </div>
               <div>
-                <h4 className="font-bold text-foreground">■ INFINITY PARKOUR</h4>
-                <p className="mt-1">どれだけ先へ進めるか挑戦する終わりのないパルクール。コースは次々自動生成され、ミスするまでずっと記録を伸ばせます。集中力とテクニックが試されるやり込み系モード・・・など</p>
+                <h4 className="font-bold text-foreground">■ BLOCKPARTY</h4>
+                <p className="mt-1">リズムに乗って踊りながら、指定された色の床へ素早く移動する、シンプルながら中毒性の高いゲーム・・・など</p>
               </div>
             </div>
           </div>
