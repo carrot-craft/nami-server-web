@@ -53,15 +53,15 @@ export default function Home() {
             </h3>
             <div className="relative space-y-6 text-muted-foreground">
               <div>
-                <h4 className="font-bold text-foreground">■ TNTRUN</h4>
+                <h4 className="font-bold text-foreground">TNTRUN</h4>
                 <p className="mt-1">足元のブロックがどんどん消えていく中で、最後まで落ちずに走り続けるゲーム。走るルートやスピード、他のプレイヤーとの駆け引きが勝敗を分けます。手に汗にぎる “奈落に落ちたら終了” のサバイバルレース！</p>
               </div>
               <div>
-                <h4 className="font-bold text-foreground">■ DUEL</h4>
+                <h4 className="font-bold text-foreground">DUEL</h4>
                 <p className="mt-1">1対1で戦うガチの決闘モード。装備はゲーム開始時に渡され、腕と読み合いだけで勝負が決まります。「タイマンで勝負したい！」という時にぴったり。</p>
               </div>
               <div>
-                <h4 className="font-bold text-foreground">■ BLOCKPARTY</h4>
+                <h4 className="font-bold text-foreground">BLOCKPARTY</h4>
                 <p className="mt-1">リズムに乗って踊りながら、指定された色の床へ素早く移動する、シンプルながら中毒性の高いゲーム・・・など</p>
               </div>
             </div>
