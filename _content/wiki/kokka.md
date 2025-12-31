@@ -15,7 +15,7 @@ tags: ["国家鯖"]
 サーバーに投票することで、特典を受け取ることができます。
 **※国家鯖にログインしている状態**で、各サイトにログインし、自分のMCIDを入力して投票してください。
 
-1. **[JMS (日本マインクラフトサーバー)](https://minecraft.jp/servers/nami.mcsv.win)** - **⚠️ 投票必須 / サイトへのログイン必要**
+1. **[JMS (日本マインクラフトサーバー)](https://minecraft.jp/servers/nami.mcsv.win)** - **サイトへのログイン必要**
 2. **[MinecraftServers.org](https://minecraftservers.org/server/681665)**
 3. **[Mineportal](https://mineportal.jp/servers/cmg0klc4c000013jiwqt04cw4/edit)**
 
